@@ -1,13 +1,15 @@
+# Luis Angel Moreno Delgado
+# Versión 2024
+
 from sympy import symbols, cos, sin, cosh, tanh, sech, pi
 from sympy.plotting import plot_parametric
 
-# Definir la variable simbólica
 t = symbols('t')
 radio = 1
 
+# Plantillas para generar plots y ahorrar código.
 def plot(x, y, interval):
     return plot_parametric(x, y, interval, show=False, line_color="black", aspect_ratio=(1,1))
-
 def plot_involute(x, y, interval):
     return plot_parametric(x, y, interval, show=False, line_color="red", aspect_ratio=(1,1))
 
